@@ -29,13 +29,10 @@ footer{text-align:center;color:#b99aa4;font-size:12px;margin-top:26px;line-heigh
 </style></head><body>
 <header><img src="logo.png" alt="Fashion Store Campinas">
 <h1>Achadinhos da <em>Fashion</em></h1>
-<p>Seleção da semana · abre direto na Shopee ou na Amazon</p>
+<p>Seleção da semana · toque em "Comprar" para abrir na Shopee</p>
 <a class="wa" href="https://wa.me/5519971298930">Atendimento no WhatsApp</a></header>
 <main class="grid" id="lista"></main>
-<h3 class="sec">Bons e baratos na <em>Amazon</em></h3>
-<p class="sec-sub">Nota alta e muita gente aprovando · preço sempre confirmado na Amazon</p>
-<main class="grid" id="amz"></main>
-<footer>Links de afiliado Shopee e Amazon: você paga o mesmo preço e ajuda a loja.<br>Como Associado da Amazon, ganho com compras qualificadas.<br>Preços sujeitos a alteração na Shopee.<br>Fashion Store Campinas</footer>
+<footer>Links de afiliado Shopee: você paga o mesmo preço e ajuda a loja.<br>Preços sujeitos a alteração na Shopee.<br>Fashion Store Campinas</footer>
 <script>
 const itens=[
 ["Tampa-bumbum para legging","R$ 29,90","tampa.webp","https://s.shopee.com.br/5q9mLxG6Wg"],
@@ -43,17 +40,14 @@ const itens=[
 ["Legging fitness com bolso lateral","R$ 38,94","legging.webp","https://s.shopee.com.br/2LZuBanT2x"],
 ["Regata plus size dry, proteção UV","R$ 34,32","regata.webp","https://s.shopee.com.br/4fxoxsACPV"],
 ["Óculos de sol grande polarizado","R$ 30,65","oculos.webp","https://s.shopee.com.br/9fMUv256R7"],
-["Kit 5 faixas para treino e skincare","R$ 15,12","faixa.webp","https://s.shopee.com.br/2BGTzIEyux"]];
+["Kit 5 faixas para treino e skincare","R$ 15,12","faixa.webp","https://s.shopee.com.br/2BGTzIEyux"],
+["Escova secadora Britânia 4 em 1 (+100 mil vendidas)","R$ 84,90","escova.webp","https://s.shopee.com.br/2BGWF6BCep"],
+["Prancha alisadora Taiff cerâmica bivolt","R$ 126,89","prancha.webp","https://s.shopee.com.br/Los3jiElE"],
+["Bolsa feminina média transversal","R$ 29,90","bolsa.webp","https://s.shopee.com.br/2LZwRSQxKI"],
+["Porta-joias mini estojo para bolsa e viagem","R$ 13,99","portajoias.webp","https://s.shopee.com.br/4B1aco6pxx"],
+["Garrafa térmica inox 500ml","R$ 29,99","garrafa.webp","https://s.shopee.com.br/6fivbO6WWs"],
+["Kit 7 organizadores de mala","R$ 33,80","mala.webp","https://s.shopee.com.br/50ahcKdbtV"],
+["Espelho de maquiagem com LED, 3 cores de luz","R$ 47,90","espelho.webp","https://s.shopee.com.br/AUveASVT4v"],
+["Colmeia organizadora de gaveta","R$ 10,90","colmeia.webp","https://s.shopee.com.br/ql8egkL09"]];
 document.getElementById('lista').innerHTML=itens.map(([n,p,i,l])=>`<div class="card"><img src="${i}" alt="${n}" loading="lazy"><div><h2>${n}</h2><div class="preco">${p}</div><a href="${l}" target="_blank" rel="noopener">Comprar na Shopee</a></div></div>`).join('');
-const amz=[
-["💨","Escova secadora Britânia Soft 4 em 1","Seca e modela em uma passada · bivolt","https://www.amazon.com.br/dp/B08L6YHZ75?tag=smartcarecamp-20"],
-["✨","Prancha Taiff cerâmica","Clássica de salão · bivolt","https://www.amazon.com.br/dp/B01643LCLW?tag=smartcarecamp-20"],
-["⌚","Smartwatch Samsung Galaxy Fit3 Rosé","Presente de Natal que agrada · passos, sono e notificações","https://www.amazon.com.br/dp/B0CVCF2J9Q?tag=smartcarecamp-20"],
-["🥤","Garrafa térmica Gocase Urban inox","Inox com parede dupla · leve na bolsa","https://www.amazon.com.br/dp/B0CQTRC47J?tag=smartcarecamp-20"],
-["🏋️","Top Puma nadador sem bojo","Academia e corrida · original","https://www.amazon.com.br/dp/B0D54BDKV8?tag=smartcarecamp-20"],
-["🧳","Kit 7 organizadores de mala","Viagem de fim de ano sem bagunça · dobrável","https://www.amazon.com.br/dp/B0FDLG7JNS?tag=smartcarecamp-20"],
-["👜","Kit 3 nécessaires impermeáveis","Praia, viagem e academia","https://www.amazon.com.br/dp/B0FPLRRKNK?tag=smartcarecamp-20"],
-["💍","Porta-joias portátil em couro","Brincos e anéis sem embolar na bolsa","https://www.amazon.com.br/dp/B0DKDQ5PRX?tag=smartcarecamp-20"],
-["🗂","Organizador de gaveta 24 divisórias","Gaveta arrumada em 5 minutos","https://www.amazon.com.br/dp/B07XZW74B8?tag=smartcarecamp-20"]];
-document.getElementById('amz').innerHTML=amz.map(([e,n,t,l])=>`<div class="card"><div class="ico" aria-hidden="true">${e}</div><div><h2>${n}</h2><div class="tag">${t}</div><a class="amz" href="${l}" target="_blank" rel="noopener sponsored nofollow">Ver preço na Amazon</a></div></div>`).join('');
 </script></body></html>
